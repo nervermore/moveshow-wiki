@@ -1,0 +1,11 @@
+{
+  "name": "moveshow-wiki",
+  "version": "1.0.0",
+  "author": "vincent",
+  "license": {
+    "type": "Commercial"
+  },
+  "dependencies": {
+    "jade": "^1.11.0"
+  }
+}

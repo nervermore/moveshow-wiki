@@ -1,0 +1,62 @@
+---
+# Configuration sample file for Jingo (YAML)
+application:
+  title: 媒清幕秀
+  repository: '/app/www'
+  docSubdir: ''
+  remote: ''
+  pushInterval: 30
+  secret: change me
+  git: git
+  skipGitCheck: false
+  loggingMode: 1
+  pedanticMarkdown: true
+  gfmBreaks: true
+  staticWhitelist: '/\.png$/i, /\.jpg$/i, /\.gif$/i'
+  proxyPath: ''
+authentication:
+  google:
+    enabled: true
+    clientId: replace me with the real value
+    clientSecret: replace me with the real value
+    redirectURL: ''
+  github:
+    enabled: true
+    clientId: '213c529d757998fb4dab'
+    clientSecret: '01a97c08fc8c58c8525bb6de464a1c22ba5542fd'
+    redirectURL: 'http://172.17.0.20:6767/auth/github/callback'
+  local:
+    enabled: true
+    accounts:
+      - username: 'admin'
+        passwordHash: '449105539a48d10bbd261ea755eea062bbe3a53c'
+        email: '6300000@qq.com'
+features:
+  markitup: false
+  codemirror: true
+server:
+  hostname: localhost
+  port: 6067
+  localOnly: false
+  baseUrl: ''
+  CORS:
+    enabled: false
+    allowedOrigin: '*'
+authorization:
+  anonRead: true
+  validMatches: .+
+  emptyEmailMatches: true
+pages:
+  index: Home
+  title:
+    fromFilename: false
+    fromContent: true
+    asciiOnly: false
+    lowercase: false
+  itemsPerPage: 10
+customizations:
+  sidebar: _sidebar.md
+  footer: _footer.md
+  style: _style.css
+  script: _script.js
+
