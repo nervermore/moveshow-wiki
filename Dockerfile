@@ -3,6 +3,8 @@ FROM daocloud.io/nevermore1981/moveshowbase:latest
 EXPOSE 80 6067
 RUN npm install -g jingo
 
+WORKDIR /app/www
+
 RUN git clone https://git.coding.net/nevermore1981/ms-wiki.git
 
 ENV APP /app/www/ms-wiki
