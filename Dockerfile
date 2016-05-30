@@ -8,7 +8,7 @@ WORKDIR $APP
 
 # add app files
 COPY . $APP/
-RUM git init && git remote add wiki https://git.coding.net/nevermore1981/ms-wiki.git
+RUN git init && git remote add wiki https://git.coding.net/nevermore1981/ms-wiki.git
 #RUN git clone https://git.coding.net/nevermore1981/ms-wiki.git
 RUN npm install
 
