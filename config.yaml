@@ -4,7 +4,7 @@ application:
   title: 媒清幕秀
   repository: '/app/www'
   docSubdir: ''
-  remote: ''
+  remote: 'wiki'
   pushInterval: 30
   secret: change me
   git: git
@@ -36,7 +36,7 @@ features:
   codemirror: true
 server:
   hostname: localhost
-  port: 6067
+  port: 80
   localOnly: false
   baseUrl: ''
   CORS:
