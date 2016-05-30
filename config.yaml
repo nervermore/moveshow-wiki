@@ -2,7 +2,7 @@
 # Configuration sample file for Jingo (YAML)
 application:
   title: 媒清幕秀
-  repository: '/app/www'
+  repository: '/app/www/ms-wiki'
   docSubdir: ''
   remote: ''
   pushInterval: 30
