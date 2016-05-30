@@ -4,7 +4,7 @@ application:
   title: 媒清幕秀
   repository: '/app/www'
   docSubdir: ''
-  remote: 'wiki'
+  remote: ''
   pushInterval: 30
   secret: change me
   git: git

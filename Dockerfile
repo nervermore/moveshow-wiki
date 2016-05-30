@@ -7,9 +7,9 @@ ENV APP /app/www
 WORKDIR $APP
 
 # add app files
-COPY . $APP/
-RUN git init && git remote add wiki https://git.coding.net/nevermore1981/ms-wiki.git
-#RUN git clone https://git.coding.net/nevermore1981/ms-wiki.git
+#COPY . $APP/
+#RUN git init && git remote add wiki https://git.coding.net/nevermore1981/ms-wiki.git
+RUN git clone https://git.coding.net/nevermore1981/ms-wiki.git
 RUN npm install
 
 #RUN node_modules/jingo/jingo -c /app/www/config.yaml&
